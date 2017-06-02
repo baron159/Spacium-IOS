@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F728B9B01EE214FC00AB3CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728B9AF1EE214FC00AB3CCA /* AppDelegate.swift */; };
+		F728B9B21EE214FC00AB3CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728B9B11EE214FC00AB3CCA /* ViewController.swift */; };
+		F728B9B51EE214FC00AB3CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728B9B31EE214FC00AB3CCA /* Main.storyboard */; };
+		F728B9B81EE214FC00AB3CCA /* Spacium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F728B9B61EE214FC00AB3CCA /* Spacium.xcdatamodeld */; };
+		F728B9BA1EE214FC00AB3CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F728B9B91EE214FC00AB3CCA /* Assets.xcassets */; };
+		F728B9BD1EE214FC00AB3CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728B9BB1EE214FC00AB3CCA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F728B9AC1EE214FC00AB3CCA /* Spacium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spacium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F728B9AF1EE214FC00AB3CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F728B9B11EE214FC00AB3CCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F728B9B41EE214FC00AB3CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F728B9B71EE214FC00AB3CCA /* Spacium.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spacium.xcdatamodel; sourceTree = "<group>"; };
+		F728B9B91EE214FC00AB3CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F728B9BC1EE214FC00AB3CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F728B9BE1EE214FC00AB3CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F728B9A91EE214FC00AB3CCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F728B9A31EE214FC00AB3CCA = {
+			isa = PBXGroup;
+			children = (
+				F728B9AE1EE214FC00AB3CCA /* Spacium */,
+				F728B9AD1EE214FC00AB3CCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F728B9AD1EE214FC00AB3CCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F728B9AC1EE214FC00AB3CCA /* Spacium.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F728B9AE1EE214FC00AB3CCA /* Spacium */ = {
+			isa = PBXGroup;
+			children = (
+				F728B9AF1EE214FC00AB3CCA /* AppDelegate.swift */,
+				F728B9B11EE214FC00AB3CCA /* ViewController.swift */,
+				F728B9B31EE214FC00AB3CCA /* Main.storyboard */,
+				F728B9B91EE214FC00AB3CCA /* Assets.xcassets */,
+				F728B9BB1EE214FC00AB3CCA /* LaunchScreen.storyboard */,
+				F728B9BE1EE214FC00AB3CCA /* Info.plist */,
+				F728B9B61EE214FC00AB3CCA /* Spacium.xcdatamodeld */,
+			);
+			path = Spacium;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F728B9AB1EE214FC00AB3CCA /* Spacium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F728B9C11EE214FC00AB3CCA /* Build configuration list for PBXNativeTarget "Spacium" */;
+			buildPhases = (
+				F728B9A81EE214FC00AB3CCA /* Sources */,
+				F728B9A91EE214FC00AB3CCA /* Frameworks */,
+				F728B9AA1EE214FC00AB3CCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spacium;
+			productName = Spacium;
+			productReference = F728B9AC1EE214FC00AB3CCA /* Spacium.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F728B9A41EE214FC00AB3CCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Scott Baron";
+				TargetAttributes = {
+					F728B9AB1EE214FC00AB3CCA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VFS48QF7U8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F728B9A71EE214FC00AB3CCA /* Build configuration list for PBXProject "Spacium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F728B9A31EE214FC00AB3CCA;
+			productRefGroup = F728B9AD1EE214FC00AB3CCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F728B9AB1EE214FC00AB3CCA /* Spacium */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F728B9AA1EE214FC00AB3CCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F728B9BD1EE214FC00AB3CCA /* LaunchScreen.storyboard in Resources */,
+				F728B9BA1EE214FC00AB3CCA /* Assets.xcassets in Resources */,
+				F728B9B51EE214FC00AB3CCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F728B9A81EE214FC00AB3CCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F728B9B81EE214FC00AB3CCA /* Spacium.xcdatamodeld in Sources */,
+				F728B9B21EE214FC00AB3CCA /* ViewController.swift in Sources */,
+				F728B9B01EE214FC00AB3CCA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F728B9B31EE214FC00AB3CCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F728B9B41EE214FC00AB3CCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F728B9BB1EE214FC00AB3CCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F728B9BC1EE214FC00AB3CCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F728B9BF1EE214FC00AB3CCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F728B9C01EE214FC00AB3CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F728B9C21EE214FC00AB3CCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VFS48QF7U8;
+				INFOPLIST_FILE = Spacium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SpotOn.Spacium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F728B9C31EE214FC00AB3CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VFS48QF7U8;
+				INFOPLIST_FILE = Spacium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SpotOn.Spacium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F728B9A71EE214FC00AB3CCA /* Build configuration list for PBXProject "Spacium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F728B9BF1EE214FC00AB3CCA /* Debug */,
+				F728B9C01EE214FC00AB3CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F728B9C11EE214FC00AB3CCA /* Build configuration list for PBXNativeTarget "Spacium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F728B9C21EE214FC00AB3CCA /* Debug */,
+				F728B9C31EE214FC00AB3CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F728B9B61EE214FC00AB3CCA /* Spacium.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F728B9B71EE214FC00AB3CCA /* Spacium.xcdatamodel */,
+			);
+			currentVersion = F728B9B71EE214FC00AB3CCA /* Spacium.xcdatamodel */;
+			path = Spacium.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F728B9A41EE214FC00AB3CCA /* Project object */;
+}
