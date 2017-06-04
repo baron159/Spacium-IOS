@@ -13,6 +13,7 @@
 		F728B9B81EE214FC00AB3CCA /* Spacium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F728B9B61EE214FC00AB3CCA /* Spacium.xcdatamodeld */; };
 		F728B9BA1EE214FC00AB3CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F728B9B91EE214FC00AB3CCA /* Assets.xcassets */; };
 		F728B9BD1EE214FC00AB3CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728B9BB1EE214FC00AB3CCA /* LaunchScreen.storyboard */; };
+		F728B9C61EE237CA00AB3CCA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F728B9C51EE237CA00AB3CCA /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F728B9B91EE214FC00AB3CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F728B9BC1EE214FC00AB3CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F728B9BE1EE214FC00AB3CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F728B9C51EE237CA00AB3CCA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F728B9C61EE237CA00AB3CCA /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				F728B9AE1EE214FC00AB3CCA /* Spacium */,
 				F728B9AD1EE214FC00AB3CCA /* Products */,
+				F728B9C41EE237CA00AB3CCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				F728B9B61EE214FC00AB3CCA /* Spacium.xcdatamodeld */,
 			);
 			path = Spacium;
+			sourceTree = "<group>";
+		};
+		F728B9C41EE237CA00AB3CCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F728B9C51EE237CA00AB3CCA /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VFS48QF7U8;
 				INFOPLIST_FILE = Spacium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SpotOn.Spacium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VFS48QF7U8;
 				INFOPLIST_FILE = Spacium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SpotOn.Spacium;
 				PRODUCT_NAME = "$(TARGET_NAME)";

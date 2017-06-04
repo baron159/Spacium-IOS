@@ -7,10 +7,86 @@
 //
 
 import UIKit
+import CoreMotion
 
 class ViewController: UIViewController {
+    
+    var rVal: Double = 0
+    var gVal: Double = 255
+    var bVal: Double = 0
+    
+    var rIncreaseFlag:Bool = true
+    var gIncreaseFlag:Bool = false
+    var bIncreaseFlag:Bool = true
+    
+    let motionManager = CMMotionManager()
+
 
     override func viewDidLoad() {
+        UIApplication.shared.isIdleTimerDisabled = true
+        motionManager.gyroUpdateInterval = 0.1
+        
+        motionManager.startGyroUpdates(to:OperationQueue.current!) { (data, error) in
+            if let myData = data {
+                print(myData.rotationRate.x)
+                if fabs(myData.rotationRate.x) > 0.3 {
+                    let rRateX = fabs(myData.rotationRate.x) * 3
+                    
+                    //This is the red value check and change code
+                    if !self.rIncreaseFlag{
+                        self.rVal -= rRateX
+                        if self.rVal < 0 {
+                            self.rVal = 0
+                            self.rIncreaseFlag = true
+                        }
+                    }else{
+                        self.rVal += rRateX * 3
+                        if self.rVal > 255 {
+                            self.rVal = 255
+                            self.rIncreaseFlag = false
+                        }
+                    }
+                    
+                    //This is the green value check and change code
+                    if !self.gIncreaseFlag{
+                        self.gVal -= rRateX
+                        if self.gVal < 0 {
+                            self.gVal = 0
+                            self.gIncreaseFlag = true
+                        }
+                    }else{
+                        self.gVal += rRateX
+                        if self.gVal > 255 {
+                            self.gVal = 255
+                            self.gIncreaseFlag = false
+                        }
+                    }
+                    
+                    //This is the blue value check and change code
+                    if !self.bIncreaseFlag{
+                        self.bVal -= rRateX
+                        if self.bVal < 0 {
+                            self.bVal = 0
+                            self.bIncreaseFlag = true
+                        }
+                    }else{
+                        self.bVal += rRateX
+                        if self.bVal > 255 {
+                            self.bVal = 255
+                            self.bIncreaseFlag = false
+                        }
+                    }
+                    let rNum:CGFloat = CGFloat(self.rVal/255)
+                    let bNum:CGFloat = CGFloat(self.bVal/255)
+                    let gNum:CGFloat = CGFloat(self.gVal/255)
+                    //let aNum:CGFloat = CGFloat(1.0)
+                    print("Red: \(rNum) Green: \(gNum) Blue: \(bNum)")
+                    print(rRateX)
+                    self.view.backgroundColor = UIColor.init(red: rNum, green: gNum, blue: bNum, alpha: 1.0)
+                }
+            }
+        }
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -19,7 +95,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
