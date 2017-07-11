@@ -11,9 +11,9 @@
 		F728B9B21EE214FC00AB3CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728B9B11EE214FC00AB3CCA /* ViewController.swift */; };
 		F728B9B51EE214FC00AB3CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728B9B31EE214FC00AB3CCA /* Main.storyboard */; };
 		F728B9B81EE214FC00AB3CCA /* Spacium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F728B9B61EE214FC00AB3CCA /* Spacium.xcdatamodeld */; };
-		F728B9BA1EE214FC00AB3CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F728B9B91EE214FC00AB3CCA /* Assets.xcassets */; };
 		F728B9BD1EE214FC00AB3CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728B9BB1EE214FC00AB3CCA /* LaunchScreen.storyboard */; };
 		F728B9C61EE237CA00AB3CCA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F728B9C51EE237CA00AB3CCA /* CoreMotion.framework */; };
+		F77B2E581F0DAD01007B0F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77B2E571F0DAD01007B0F8F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		F728B9B11EE214FC00AB3CCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F728B9B41EE214FC00AB3CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F728B9B71EE214FC00AB3CCA /* Spacium.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spacium.xcdatamodel; sourceTree = "<group>"; };
-		F728B9B91EE214FC00AB3CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F728B9BC1EE214FC00AB3CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F728B9BE1EE214FC00AB3CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F728B9C51EE237CA00AB3CCA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		F77B2E571F0DAD01007B0F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +60,11 @@
 		F728B9AE1EE214FC00AB3CCA /* Spacium */ = {
 			isa = PBXGroup;
 			children = (
+				F77B2E571F0DAD01007B0F8F /* Assets.xcassets */,
 				F728B9AF1EE214FC00AB3CCA /* AppDelegate.swift */,
+				F728B9BB1EE214FC00AB3CCA /* LaunchScreen.storyboard */,
 				F728B9B11EE214FC00AB3CCA /* ViewController.swift */,
 				F728B9B31EE214FC00AB3CCA /* Main.storyboard */,
-				F728B9B91EE214FC00AB3CCA /* Assets.xcassets */,
-				F728B9BB1EE214FC00AB3CCA /* LaunchScreen.storyboard */,
 				F728B9BE1EE214FC00AB3CCA /* Info.plist */,
 				F728B9B61EE214FC00AB3CCA /* Spacium.xcdatamodeld */,
 			);
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F728B9BD1EE214FC00AB3CCA /* LaunchScreen.storyboard in Resources */,
-				F728B9BA1EE214FC00AB3CCA /* Assets.xcassets in Resources */,
+				F77B2E581F0DAD01007B0F8F /* Assets.xcassets in Resources */,
 				F728B9B51EE214FC00AB3CCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +322,7 @@
 				F728B9C31EE214FC00AB3CCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

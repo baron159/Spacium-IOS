@@ -10,6 +10,7 @@ import UIKit
 import CoreMotion
 
 class ViewController: UIViewController {
+    @IBOutlet weak var cogElement: UIImageView!
     
     var rVal: Double = 0
     var gVal: Double = 255
@@ -26,11 +27,11 @@ class ViewController: UIViewController {
         UIApplication.shared.isIdleTimerDisabled = true
         motionManager.gyroUpdateInterval = 0.1
         
-        motionManager.startGyroUpdates(to:OperationQueue.current!) { (data, error) in
+        motionManager.startAccelerometerUpdates(to:OperationQueue.current!) { (data, error) in
             if let myData = data {
-                print(myData.rotationRate.x)
-                if fabs(myData.rotationRate.x) > 0.3 {
-                    let rRateX = fabs(myData.rotationRate.x) * 3
+                print(myData.acceleration.x)
+                if fabs(myData.acceleration.x) > 0.3 {
+                    let rRateX = fabs(myData.acceleration.x) * 3
                     
                     //This is the red value check and change code
                     if !self.rIncreaseFlag{
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
                             self.rIncreaseFlag = true
                         }
                     }else{
-                        self.rVal += rRateX * 3
+                        self.rVal += rRateX
                         if self.rVal > 255 {
                             self.rVal = 255
                             self.rIncreaseFlag = false
@@ -79,10 +80,15 @@ class ViewController: UIViewController {
                     let rNum:CGFloat = CGFloat(self.rVal/255)
                     let bNum:CGFloat = CGFloat(self.bVal/255)
                     let gNum:CGFloat = CGFloat(self.gVal/255)
+                    
+                    let cogR:CGFloat = CGFloat((255-self.rVal)/255)
+                    let cogG:CGFloat = CGFloat((255-self.rVal)/255)
+                    let cogB:CGFloat = CGFloat((255-self.rVal)/255)
+
                     //let aNum:CGFloat = CGFloat(1.0)
-                    print("Red: \(rNum) Green: \(gNum) Blue: \(bNum)")
                     print(rRateX)
                     self.view.backgroundColor = UIColor.init(red: rNum, green: gNum, blue: bNum, alpha: 1.0)
+                    self.cogElement.tintColor = UIColor.init(red: cogR, green: cogG, blue: cogB, alpha: 1.0)
                 }
             }
         }
